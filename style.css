@@ -1,0 +1,266 @@
+.text-gradient {
+  background: -webkit-linear-gradient(315deg, #6610f2 0%, #20c997 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+/* Colour Section*/
+.colored-outline-button {
+  border-color: #6610f2;
+  /* Ganti dengan kode warna HEX yang diinginkan */
+  color: #6610f2;
+  /* Warna teks pada tombol */
+}
+
+.colored-outline-button:hover {
+  background-color: #6610f2;
+  /* Ganti dengan kode warna HEX yang diinginkan */
+  color: #ffffff;
+  /* Warna teks ketika tombol aktif/diklik */
+}
+
+.popover-title {
+  background-color: #20c997;
+  /* Ganti 'yourPopoverColor' dengan kode warna yang diinginkan untuk popover title */
+  color: #20c997;
+  /* Ganti 'yourPopoverTextColor' dengan kode warna teks yang diinginkan untuk popover title */
+}
+
+.colored-outline:hover {
+  color: #6610f2;
+  /* Warna teks ketika tombol aktif/diklik */
+  font-weight: bold;
+}
+
+.bg-gradient {
+  background-image: var(--bs-gradient) !important;
+}
+
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.fw-bolder {
+  font-weight: bolder !important;
+}
+
+.bg-gradient-primary-to-secondary {
+  background: #1e30f3;
+  background: linear-gradient(135deg, #F8E559 0%, #FF3EA5 100%);
+}
+
+.bg-gradient-secondary-to-third {
+  background: #1e30f3;
+  background: linear-gradient(135deg, #20c997 0%, #6610f2 100%);
+}
+
+.badge {
+  --bs-badge-padding-x: 0.65em;
+  --bs-badge-padding-y: 0.35em;
+  --bs-badge-font-size: 0.75em;
+  --bs-badge-font-weight: 700;
+  --bs-badge-color: #fff;
+  --bs-badge-border-radius: 0.375rem;
+  display: inline-block;
+  padding: var(--bs-badge-padding-y) var(--bs-badge-padding-x);
+  font-size: var(--bs-badge-font-size);
+  font-weight: var(--bs-badge-font-weight);
+  line-height: 1;
+  color: var(--bs-badge-color);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: var(--bs-badge-border-radius);
+}
+
+/* Profile Section*/
+.profile {
+  position: relative;
+  height: 75vw;
+  width: 75vw;
+  border-radius: 5vw;
+  margin-top: 5vw;
+  max-height: 22rem;
+  max-width: 38rem;
+  transform-style: preserve-3d;
+}
+
+.jumbotron .profile-img {
+  height: 30vw;
+  max-height: 35rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.jumbotron .dots-1 {
+  position: absolute;
+  width: 2vw;
+  right: 1.5vw;
+  top: 4vw;
+  fill: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.jumbotron:hover .dots-1 {
+  opacity: 1;
+  top: 10px;
+}
+
+.jumbotron .dots-3 {
+  position: absolute;
+  width: 2vw;
+  left: 1.5vw;
+  bottom: 6.05vw;
+  fill: #fff;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.jumbotron:hover .dots-3 {
+  opacity: 1;
+  bottom: 10px;
+}
+
+/* Resume Section*/
+.resume {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/* Font Zise Section*/
+.larger {
+  font-size: 1.5em;
+  /* Sesuaikan ukuran ikon sesuai kebutuhan */
+  margin-right: 10px;
+}
+
+/* Button Responsive Section*/
+@media (max-width: 375px) and (max-height: 667px) {
+  .btn-responsive {
+    width: 50%;
+    margin-bottom: 10px;
+    /* Atur margin sesuai kebutuhan Anda */
+  }
+}
+
+/* Custom CSS for Project Card with Carousel */
+.card {
+  max-width: 800px;
+  /* Atur lebar maksimum sesuai kebutuhan Anda */
+  margin: 0 auto;
+  /* Pusatkan kartu di halaman */
+}
+
+.card-color {
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(103, 16, 242, 0.5);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(103, 16, 242, 0.5);
+  box-shadow: 0px 0px 9px 0px rgba(103, 16, 242, 0.5);
+}
+
+.project-color {
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(32, 201, 150, 0.5);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(32, 201, 150, 0.5);
+  box-shadow: 0px 0px 9px 0px rgba(32, 201, 150, 0.5);
+}
+
+/* .project-card .carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  /* menjaga aspek rasio dan memotong gambar jika diperlukan */
+/* } */
+.carousel-inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* Atur tinggi sesuai kebutuhan Anda */
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
+  max-height: 100%;
+  /* Mencegah gambar melebihi tinggi carousel-item */
+  max-width: 100%;
+  /* Mencegah gambar melebihi lebar carousel-item */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  /* Sesuaikan dengan kebutuhan Anda, bisa mencoba "cover" atau "contain" */
+}
+
+.card-body {
+  background-color: #f8f9fa;
+  /* Ganti warna latar belakang sesuai kebutuhan Anda */
+}
+
+.card h2 {
+  color: #007bff;
+  /* Ganti warna teks sesuai kebutuhan Anda */
+}
+
+.card p {
+  color: #6c757d;
+  /* Ganti warna teks sesuai kebutuhan Anda */
+}
+
+/* 3D Profile*/
+.jumbotron {
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+.jumbotron::before {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  content: "MY PROFILE";
+  background: -webkit-linear-gradient(315deg, #6610f2 0%, #20c997 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  opacity: 0;
+  left: -100px;
+  transition: 0.5s;
+}
+
+.jumbotron:hover::before {
+  left: 50%;
+  transform: translate3d(-50%, 0, 50px);
+  opacity: 1;
+}
+
+.jumbotron .btn-profile {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  left: 50%;
+  transition: 0.5s;
+  transform: translate3d(-50%, 0, 50px);
+}
+
+.jumbotron:hover .btn-profile {
+  opacity: 1;
+  bottom: 10px;
+}
+
+/* Efek Text*/
+.efek {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
